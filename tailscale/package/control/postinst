@@ -1,0 +1,7 @@
+#!/bin/bash
+# Post installation script
+
+service tailscale start
+service tailscale enable
+
+exit 0

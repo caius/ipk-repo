@@ -4,6 +4,8 @@ Packages Caius has built for OpenWRT on Raspberry Pi, using opkg. They may be of
 
 Currently contains:
 
+* tailscale - https://tailscale.com/kb/1031/install-linux
+
 ## License
 
 The bits of this repo that aren't lifted from other repos/packages and therefore licensed to them falls under the following.

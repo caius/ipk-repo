@@ -1,0 +1,17 @@
+#!/bin/sh /etc/rc.common
+
+START=50
+STOP=50
+
+USE_PROCD=1
+
+start_service() {
+  procd_open_instance "tailscale"
+
+  procd_set_param command /usr/sbin/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/var/run/tailscale/tailscaled.sock --port 41641
+
+  # respawn threshold, respawn timeout, respawn retry
+  procd_set_param respawn 3600 30 10
+
+  procd_close_instance
+}

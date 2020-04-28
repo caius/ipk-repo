@@ -1,0 +1,7 @@
+Package: tailscale
+Version: 0.98.0
+Architecture: arm
+Maintainer: dev@caius.name
+Description: Tailscale service
+Priority: optional
+Depends: ca-certificates
