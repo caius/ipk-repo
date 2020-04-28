@@ -4,4 +4,4 @@ Architecture: arm
 Maintainer: dev@caius.name
 Description: Tailscale service
 Priority: optional
-Depends:
+Depends: ca-certificates
